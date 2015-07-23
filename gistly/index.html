@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Josh Halickman</title>
+  <title>Gistly - Josh Halickman</title>
   <meta name="author" content="Joshua Halickman">
 
   
-  <meta name="description" content="This is going to be a quick post but every time I need to do this I always forget how so I wanted to put it down someplace.Every now and then you n...">
+  <meta name="description" content="        Gistly                      About Me                                        Hey, my name is Josh, I am a software engineer at Etsy in Brook...">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.halickman.com/">
+  <link rel="canonical" href="http://blog.halickman.com/gistly/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -60,115 +60,21 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/ssh-tunneling-made-easy/">SSH Tunneling Made Easy</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-  
-
-
-
-<time datetime="2011-10-20T00:40:00-04:00" pubdate  data-updated="true" >Oct 20<span>th</span>, 2011</time>
-        
-      </p>
+    <h1 class="entry-title">Gistly</h1>
     
   </header>
+  
+  
 
-
-  <div class="entry-content"><p>This is going to be a quick post but every time I need to do this I always forget how so I wanted to put it down someplace.</p>
-
-<p>Every now and then you need to make a connection from Computer A to Computer B but Computer A can not make a direct connection
-to Computer B (because of a firewall or something similar). If you have a computer that A can reach and that can reach B, which we will
-call the Middle Man, then you can set up a tunnel through the Middle Man from A to B.(See the diagram below)</p>
-
-<p><img class="center" src="/images/SSH_tunnel_Diagram.png"></p>
-
-<p>If you run the following code below on Computer A, and then connect to localhost instead of Computer B, your traffic will be routed
-through the Middle Man and to Computer B.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -f -L [port_#]:[computer_b_hostname]:[port_#] [username]@[middle_man_hostname] -N</span></code></pre></td></tr></table></div></figure>
+  
+</article>
 
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/google-music-keys/">Announcing Google Music Keys</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-  
-
-
-
-<time datetime="2011-10-01T20:08:00-04:00" pubdate  data-updated="true" >Oct 1<span>st</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="left" src="/images/GMKIcon.png">
-Google Music is a great service, I am able to listen to my whole library from any computer that has a web browser,
-with out having to copy all the files over. This is a huge advantages of using a web application like Google Music
-but there are also some disadvantages.</p>
-
-<p>While I really enjoyed using the service every time I had to pause my music or skip I had to find the browser window and tab
-that was playing the music and click the button, this to me quickly became a huge pain. This is the biggest drawback of
-web apps in my opinion, they just do not integrate into the native workflow as well as a native app.</p>
-
-<p>So what is a developer to do in this situation, write some code to fix it, and today I am sharing that with everyone else.
-Google Music Keys is a small native Mac app that allows you to use global shortcut keys, or the Mac keyboard media Keys
-to control Google Music in your browser(safari or chrome). I have also open sourced the code so others can hack on it
-use the same functions for other projects.</p>
-
-<p>I would also like to thank Terin Stock for <a href="http://threestrangedays.net/gsdesktophelper/">GSDesktopHelper</a> which I used
-as the base for this project.</p>
-
-<p>You can find the download link and more information <a href="/google-music-keys">Here</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <nav class="pagination">
-    <div>
-      
-      <a href="/blog/archives">Blog Archives</a>
-      
-    </div>
-  </nav>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -212,7 +118,7 @@ as the base for this project.</p>
 <section>
   <h1>Github Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/jhalickman">@jhalickman</a> on Github
@@ -242,7 +148,7 @@ as the base for this project.</p>
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -260,6 +166,7 @@ as the base for this project.</p>
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -269,20 +176,6 @@ as the base for this project.</p>
 
 </footer>
   
-
-<script type="text/javascript">
-    (function () {
-      var disqus_shortname = 'jhalickman';
-      
-        
-        var disqus_script = 'count.js'
-      
-
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 

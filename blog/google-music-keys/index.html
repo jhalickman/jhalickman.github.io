@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Josh Halickman</title>
+  <title>Announcing Google Music Keys - Josh Halickman</title>
   <meta name="author" content="Joshua Halickman">
 
   
-  <meta name="description" content="This is going to be a quick post but every time I need to do this I always forget how so I wanted to put it down someplace.Every now and then you n...">
+  <meta name="description" content="Google Music is a great service, I am able to listen to my whole library from any computer that has a web browser,with out having to copy all the f...">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.halickman.com/">
+  <link rel="canonical" href="http://blog.halickman.com/blog/google-music-keys/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -60,62 +60,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/ssh-tunneling-made-easy/">SSH Tunneling Made Easy</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-  
-
-
-
-<time datetime="2011-10-20T00:40:00-04:00" pubdate  data-updated="true" >Oct 20<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This is going to be a quick post but every time I need to do this I always forget how so I wanted to put it down someplace.</p>
-
-<p>Every now and then you need to make a connection from Computer A to Computer B but Computer A can not make a direct connection
-to Computer B (because of a firewall or something similar). If you have a computer that A can reach and that can reach B, which we will
-call the Middle Man, then you can set up a tunnel through the Middle Man from A to B.(See the diagram below)</p>
-
-<p><img class="center" src="/images/SSH_tunnel_Diagram.png"></p>
-
-<p>If you run the following code below on Computer A, and then connect to localhost instead of Computer B, your traffic will be routed
-through the Middle Man and to Computer B.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -f -L [port_#]:[computer_b_hostname]:[port_#] [username]@[middle_man_hostname] -N</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/google-music-keys/">Announcing Google Music Keys</a></h1>
+      <h1 class="entry-title">Announcing Google Music Keys</h1>
     
     
       <p class="meta">
@@ -136,7 +86,7 @@ through the Middle Man and to Computer B.</p>
   </header>
 
 
-  <div class="entry-content"><p><img class="left" src="/images/GMKIcon.png">
+<div class="entry-content"><p><img class="left" src="/images/GMKIcon.png">
 Google Music is a great service, I am able to listen to my whole library from any computer that has a web browser,
 with out having to copy all the files over. This is a huge advantages of using a web application like Google Music
 but there are also some disadvantages.</p>
@@ -155,20 +105,52 @@ as the base for this project.</p>
 
 <p>You can find the download link and more information <a href="/google-music-keys">Here</a></p>
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Joshua Halickman</span></span>
+
+      
+
+
+
+
+
   
 
 
-    </article>
+
+<time datetime="2011-10-01T20:08:00-04:00" pubdate  data-updated="true" >Oct 1<span>st</span>, 2011</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
   
-  <nav class="pagination">
-    <div>
-      
-      <a href="/blog/archives">Blog Archives</a>
-      
-    </div>
-  </nav>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.halickman.com/blog/google-music-keys/" data-via="jhalickman" data-counturl="http://blog.halickman.com/blog/google-music-keys/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
 </div>
+
+    
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -212,7 +194,7 @@ as the base for this project.</p>
 <section>
   <h1>Github Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/jhalickman">@jhalickman</a> on Github
@@ -242,7 +224,7 @@ as the base for this project.</p>
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -260,6 +242,7 @@ as the base for this project.</p>
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -275,7 +258,10 @@ as the base for this project.</p>
       var disqus_shortname = 'jhalickman';
       
         
-        var disqus_script = 'count.js'
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.halickman.com/blog/google-music-keys/';
+        var disqus_url = 'http://blog.halickman.com/blog/google-music-keys/';
+        var disqus_script = 'embed.js'
       
 
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

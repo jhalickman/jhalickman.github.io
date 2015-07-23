@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Josh Halickman</title>
+  <link href="http://blog.halickman.com/atom.xml" rel="self"/>
+  <link href="http://blog.halickman.com/"/>
+  <updated>2012-02-15T11:26:24-05:00</updated>
+  <id>http://blog.halickman.com/</id>
+  <author>
+    <name>Joshua Halickman</name>
+    
+  </author>
+
+  
+  <entry>
+    <title>SSH Tunneling Made Easy</title>
+    <link href="http://blog.halickman.com/blog/ssh-tunneling-made-easy/"/>
+    <updated>2011-10-20T00:40:00-04:00</updated>
+    <id>http://blog.halickman.com/blog/ssh-tunneling-made-easy</id>
+    <content type="html">&lt;p&gt;This is going to be a quick post but every time I need to do this I always forget how so I wanted to put it down someplace.&lt;/p&gt;
+
+&lt;p&gt;Every now and then you need to make a connection from Computer A to Computer B but Computer A can not make a direct connection
+to Computer B (because of a firewall or something similar). If you have a computer that A can reach and that can reach B, which we will
+call the Middle Man, then you can set up a tunnel through the Middle Man from A to B.(See the diagram below)&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://blog.halickman.com/images/SSH_tunnel_Diagram.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;If you run the following code below on Computer A, and then connect to localhost instead of Computer B, your traffic will be routed
+through the Middle Man and to Computer B.&lt;/p&gt;
+
+&lt;figure class=&#8217;code&#8217;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#8217;line-number&#8217;&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;&lt;code class=&#8221;&gt;&lt;span class=&#8217;line&#8217;&gt;ssh -f -L [port_#]:[computer_b_hostname]:[port_#] [username]@[middle_man_hostname] -N&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>Announcing Google Music Keys</title>
+    <link href="http://blog.halickman.com/blog/google-music-keys/"/>
+    <updated>2011-10-01T20:08:00-04:00</updated>
+    <id>http://blog.halickman.com/blog/google-music-keys</id>
+    <content type="html">&lt;p&gt;&lt;img class=&quot;left&quot; src=&quot;http://blog.halickman.com/images/GMKIcon.png&quot;&gt;
+Google Music is a great service, I am able to listen to my whole library from any computer that has a web browser,
+with out having to copy all the files over. This is a huge advantages of using a web application like Google Music
+but there are also some disadvantages.&lt;/p&gt;
+
+&lt;p&gt;While I really enjoyed using the service every time I had to pause my music or skip I had to find the browser window and tab
+that was playing the music and click the button, this to me quickly became a huge pain. This is the biggest drawback of
+web apps in my opinion, they just do not integrate into the native workflow as well as a native app.&lt;/p&gt;
+
+&lt;p&gt;So what is a developer to do in this situation, write some code to fix it, and today I am sharing that with everyone else.
+Google Music Keys is a small native Mac app that allows you to use global shortcut keys, or the Mac keyboard media Keys
+to control Google Music in your browser(safari or chrome). I have also open sourced the code so others can hack on it
+use the same functions for other projects.&lt;/p&gt;
+
+&lt;p&gt;I would also like to thank Terin Stock for &lt;a href=&quot;http://threestrangedays.net/gsdesktophelper/&quot;&gt;GSDesktopHelper&lt;/a&gt; which I used
+as the base for this project.&lt;/p&gt;
+
+&lt;p&gt;You can find the download link and more information &lt;a href=&quot;http://blog.halickman.com/google-music-keys&quot;&gt;Here&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+</feed>
